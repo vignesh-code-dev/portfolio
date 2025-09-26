@@ -1,0 +1,40 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    position:sticky;
+    top: 0;
+    z-index: 3;
+    font-weight: 500;
+    background:transparent;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+.menulist{
+    margin: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    color:white;
+}
+.menulist:hover{
+    color: rgb(255, 255, 0);
+    transition: 0.2s;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(242, 255, 0) ;
+    transition: 200ms ease-in-out;
+    padding: 5px;
+
+}
+.logo{
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+    cursor: pointer;
+}
+.logo span{
+    color: rgb(242, 255, 40);
+}
