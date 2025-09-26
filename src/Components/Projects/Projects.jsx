@@ -7,25 +7,25 @@ const data = [
     id: "1",
     title: "Calculator",
     dec: "This is a simple yet functional calculator built using plain JavaScript. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division.",
-    image: "/calc.png",
+    image: "public/images/calc.png",
   },
   {
     id: "2",
     title: "To-Do List",
     dec: "A simple and interactive To-Do List application built with React.js, allowing users to manage their daily tasks efficiently.",
-    image: "/todo.png",
+    image: "public/images/todo.png",
   },
   {
     id: "3",
     title: "Form",
     dec: "A responsive and user-friendly form validation project developed using pure HTML, CSS, and JavaScript. The application validates user inputs in real-time and prevents form submission until all fields meet the required conditions.",
-    image: "/form.png",
+    image: "public/images/form.png",
   },
   {
     id: "2",
     title: "To-Do List",
     dec: "A simple and interactive To-Do List application built with React.js, allowing users to manage their daily tasks efficiently.",
-    image: "/todo.png",
+    image: "public/images/todo.png",
   },
 ];
 
