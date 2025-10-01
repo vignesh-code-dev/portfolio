@@ -1,4 +1,4 @@
-import React from "react";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -39,11 +39,19 @@ const data = [
 
 const About = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3, // desktop
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, // <=768px
+        slidesToShow: 1,
+        dots:false,
+        arrow:true,
+      }
+    ],
   };
   return (
     <Element name="about">

@@ -5,7 +5,7 @@ import img from "../../../public/images/home.webp";
 const Intro = () => {
   return (
     <Element name="home" className="intro">
-      <section>
+      <section className="home-container">
         <div className="intro-content">
           <span className="hi">Hi,</span>
           <span className="intro-text">
@@ -18,8 +18,8 @@ const Intro = () => {
             <br /> Currently looking for opportunities to contribute <br />
             and grow in a professional environment.
           </p>
-          <a href="public/epfo.pdf" download>
-            <button className="intro-btn">Download CV</button>{" "}
+          <a href="public/epfo.pdf" className="intro-btn" download>
+            Download CV
           </a>
         </div>
         <div className="home-image">

@@ -14,7 +14,7 @@ const data = [
     title: "To-Do List",
     dec: "A simple and interactive To-Do List application built with React.js, allowing users to manage their daily tasks efficiently.",
     image: "public/images/todo.png",
-    src: "https://vignesh-code-dev.github.io/calculator/",
+    src: "https://vignesh-code-dev.github.io/to-do-list/",
   },
   {
     id: "3",
