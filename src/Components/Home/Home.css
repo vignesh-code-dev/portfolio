@@ -1,15 +1,17 @@
+.home-container{
+    display: flex;
+}
 .intro{
     overflow: hidden; 
     height: 100vh;
     width: 100vw;
     margin: 0 auto; 
     position: relative;
-    /* background-image: url(../../assets/home.jpg); */
 }
 .intro-content{
+    
     position: absolute;
     height:100vh;
-    top: 40px;
     left: 50px;
     width: 100vw;
     padding:  4rem;
@@ -18,29 +20,47 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    flex: .3;
 }
 .hi{
-    font-size: 1.75rem;
-    font-weight: 200;
+    font-size: 2rem;
+    font-weight: 400;
 }
 .intro-name{
-    color:rgb(242, 255, 0) ;
+    color:rgb(5, 129, 17) ;
 }
 .intro-para{
-    font-size: medium;
-    font-weight: 300;
+    font-size: large;
+    font-weight: 500;
     letter-spacing: 1px;
+    
 }
 .intro-btn{
      font-size: 1.2rem;
        height: 2.5rem;
        padding: 0 1rem;
-       border: none;
-       border-radius: 20px;
+       border: 1px solid rgb(5, 129, 17); 
       cursor: pointer;
       margin: 1rem 0;
+     color:rgb(5, 129, 17) ;
+     font-weight: 600;
 }
+.intro-btn:hover{
+    color: white;
+    background-color: rgb(5, 129, 17);
+    border: 1px solid white;
+}
+
+.home-img{
+    object-fit: cover;
+    height: 450px;
+    position: relative;
+    left: 60%;
+    top: 200px;
+    opacity: 50%;
+}
+
+
 @media screen and (max-width:840px){
     .intro-image{
         right: -70px;

@@ -2,10 +2,6 @@ import "../Contact/Contact.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaFacebookSquare } from "react-icons/fa";
-import { GrConnect } from "react-icons/gr";
 import { Element } from "react-scroll";
 const Contact = () => {
   return (
@@ -18,10 +14,7 @@ const Contact = () => {
           <div className="contact">
             <div className="text-container">
               <div className="con-text">
-                <FaLocationDot
-                  size={30}
-                  style={{ color: "rgb(242, 255, 0)" }}
-                />
+                <FaLocationDot size={30} style={{ color: "rgb(5, 129, 17)" }} />
                 <div>
                   <span className="con-text-heading"> Address</span>
                   <p>
@@ -36,7 +29,7 @@ const Contact = () => {
               <div className="con-text">
                 <FaPhoneSquareAlt
                   size={30}
-                  style={{ color: "rgb(242, 255, 0)" }}
+                  style={{ color: "rgb(5, 129, 17)" }}
                 />
                 <div>
                   <span className="con-text-heading">Phone</span>
@@ -44,21 +37,18 @@ const Contact = () => {
                 </div>
               </div>
               <div className="con-text">
-                <MdEmail size={30} style={{ color: "rgb(242, 255, 0)" }} />
+                <MdEmail size={30} style={{ color: "rgb(5, 129, 17)" }} />
                 <div>
                   <span className="con-text-heading">Email</span>
-                  <p>vickyv.developer@gmail.com</p>
-                </div>
-              </div>
-              <div className="con-text">
-                <GrConnect size={30} style={{ color: "rgb(242, 255, 0)" }} />
-                <div>
-                  <span className="con-text-heading">Connect with me</span>
-                  <div className="con-icon-list">
-                    <FaLinkedin size={20} className="con-icon" />
-                    <FaXTwitter size={20} className="con-icon" />
-                    <FaFacebookSquare size={20} className="con-icon" />
-                  </div>
+                  <p>
+                    <a
+                      href="mailto:vickyv.developer@gmail.com"
+                      target="_blank"
+                      className="con-mail"
+                    >
+                      vickyv.developer@gmail.com
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -74,7 +64,6 @@ const Contact = () => {
                 <input type="mail" id="mail" />
               </div>
               <div className="con-input-message">
-                {/* <label for="message">Message</label> */}
                 <textarea
                   name="message"
                   id="message"

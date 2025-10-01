@@ -1,11 +1,17 @@
 .con-container{
     width: 100vw;   
     overflow:hidden;
+    height: 100vh   ;
 }
 .con-head{
     margin-top: 5rem;
-    text-align:center;
+    display: flex;
+    justify-content:center;
 } 
+.con-head>h1{
+      width: fit-content;
+    border-bottom: 3px solid rgb(5, 129, 17);
+}
 .contact-container{
     display: flex; 
     margin-top: 1rem;
@@ -24,16 +30,11 @@
 .con-text{
     display: flex;
     margin: 3rem 0;
-}
-.con-icon-list{
-    display: flex;
-    margin-top: 10px;
-}
-.con-icon{
-    margin: 0 .5rem;
+    letter-spacing: 1px;
 }
 .con-text-heading{
-    color: rgb(0, 138, 237);
+    color:rgb(5, 129, 17);
+    font-weight: 500;
 }
 
 
@@ -47,7 +48,6 @@
     position: absolute;
     left: 25%;
     top: 5%;
-    background-color: rgb(53, 52, 51);
     border-radius: 20px;
 }
 .con-input{
@@ -59,7 +59,8 @@
 }
 .con-input label{
     font-size: 1.3rem;
-    color:rgb(242,255,0);
+    color:rgb(5, 129, 17);
+    font-weight: 500;
 
 }
 .con-input input{
@@ -70,8 +71,8 @@
     border-radius: 10px;
     border: none;
     background:none;
-    border-bottom: 2px solid white  ;
-    color: white;
+    border-bottom: 2px solid rgb(5, 129, 17)  ;
+    color: rgb(0, 0, 0);
 }
 .con-input-message{
      margin: 3rem auto;
@@ -84,8 +85,8 @@ textarea{
         outline: none;
         font-size: large;
         padding-left: 10px;
-        border-bottom: 2px solid white;
-        color: rgb(255, 235, 54);
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(5, 129, 17);
  background:none;
 
  width: 80%;
@@ -93,12 +94,15 @@ textarea{
 }
 .con-btn{
     height: 2rem;
-    background-color: rgb(242, 255, 0);
+    background-color: rgb(5, 129, 17);
     width: 40%;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     font-size: large;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin:  0 auto;
-    font-weight: 800;
+    font-weight: 600;
+}
+.con-mail{
+    color: black;
 }

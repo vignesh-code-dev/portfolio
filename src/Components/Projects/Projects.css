@@ -63,6 +63,12 @@
       font-weight: bold;
 }
 .pro-head{
-    text-align: center;
+    justify-content: center;
     margin-top: 5rem;
+    display: flex;
+}
+.pro-head>h1{
+     width: fit-content;
+    border-bottom: 3px solid rgb(5, 129, 17);
+    padding-bottom: 2px;
 }

@@ -8,9 +8,13 @@
 body{
     text-decoration: none;
     list-style: none;
-    background-color:rgb(40, 38, 38);
-    color: rgb(255, 255, 255);
+    background-color:rgb(204, 210, 205);
+    color: rgb(0, 0, 0);
     font-family:"Poppins",sans-serif;
     overflow: hidden;
     overflow-y: scroll;
+    
+}
+a{
+    text-decoration: none;
 }

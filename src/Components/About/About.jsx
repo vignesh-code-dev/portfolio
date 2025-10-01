@@ -33,11 +33,11 @@ const data = [
     id: "5",
     img: "public/images/java.svg",
     name: "JAVA",
-    dec: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fugit sed quasi natus quas. Aut nemo deleniti quibusdam neque, iure est doloribus fuga ea tempora, vitae, unde voluptate quos qui.",
+    dec: "Proficient in Core Java with a strong understanding of Object-Oriented Programming (OOP) concepts such as Encapsulation, Inheritance, Polymorphism and Abstraction. Knowledgeable in Collections Framework, Exception Handling, File Handling and basic Multithreading.",
   },
 ];
 
-const Sliderr = () => {
+const About = () => {
   const settings = {
     dots: false,
     infinite: false,
@@ -85,4 +85,4 @@ const Sliderr = () => {
   );
 };
 
-export default Sliderr;
+export default About;

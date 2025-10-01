@@ -1,4 +1,3 @@
-import React from "react";
 import "../Projects/Projects.css";
 import { Element } from "react-scroll";
 
@@ -8,24 +7,21 @@ const data = [
     title: "Calculator",
     dec: "This is a simple yet functional calculator built using plain JavaScript. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division.",
     image: "public/images/calc.png",
+    src: "https://vignesh-code-dev.github.io/calculator/",
   },
   {
     id: "2",
     title: "To-Do List",
     dec: "A simple and interactive To-Do List application built with React.js, allowing users to manage their daily tasks efficiently.",
     image: "public/images/todo.png",
+    src: "https://vignesh-code-dev.github.io/calculator/",
   },
   {
     id: "3",
     title: "Form",
     dec: "A responsive and user-friendly form validation project developed using pure HTML, CSS, and JavaScript. The application validates user inputs in real-time and prevents form submission until all fields meet the required conditions.",
     image: "public/images/form.png",
-  },
-  {
-    id: "2",
-    title: "To-Do List",
-    dec: "A simple and interactive To-Do List application built with React.js, allowing users to manage their daily tasks efficiently.",
-    image: "public/images/todo.png",
+    src: "https://vignesh-code-dev.github.io/Form-validation/",
   },
 ];
 
@@ -48,7 +44,9 @@ const Projects = () => {
                 </div>
               </div>
               <div>
-                <button className="pro-btn">view project</button>
+                <a href={d.src}>
+                  <button className="pro-btn">view project</button>
+                </a>
               </div>
               <div className="item-img">
                 <img src={d.image} alt="" className="pro-img" />
