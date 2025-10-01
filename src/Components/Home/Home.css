@@ -30,7 +30,6 @@
     font-size: large;
     font-weight: 450;
     letter-spacing: 1px;
-    
 }
 .intro-btn{
      font-size: 1.2rem;
@@ -61,18 +60,21 @@
 
 @media screen and (max-width:768px){
     .intro-content{
-     top: -20%;
     left: 0;
     width: 100%;
     padding:  4rem;
 }
     .home-img{
-    height: 450px;
     position: relative;
-    left: 15%;
-    top: 55vh;
-    opacity: 50%;
-    height: 350px;
+    left: 25%;
+    top: 38vh;
+    opacity: 20%;
+    height: 300px;
 }
-    
+    .intro-para{
+    font-size: large;
+    font-weight: 450;
+    letter-spacing: 1px;
+    width: 300px;
+}
 }
