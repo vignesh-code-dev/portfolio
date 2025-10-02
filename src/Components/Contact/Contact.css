@@ -1,141 +1,156 @@
-.con-container{
-    width: 100vw;   
-    overflow:hidden;
-    height: 100vh;
+.con-container {
+    width: 100vw;
+    overflow: hidden;
+    min-height: 100vh; /* instead of fixed height */
+    padding: 2rem 0;
 }
-.con-head{
+
+.con-head {
     margin-top: 5rem;
     display: flex;
-    justify-content:center;
-} 
-.con-head>h1{
-      width: fit-content;
+    justify-content: center;
+}
+.con-head > h1 {
+    width: fit-content;
     border-bottom: 3px solid rgb(5, 129, 17);
 }
-.contact-container{
-    display: flex; 
+
+.contact-container {
+    display: flex;
     margin-top: 1rem;
+    gap: 2rem;
 }
-.contact{
-    flex: .5;
-    position: relative;
-    left: 15%;
+
+.contact {
+    flex: 0.5;
+    padding-left: 15%;
 }
-.text-container{
+
+.text-container {
+    display: flex;
     flex-direction: column;
-    display: flex; 
     font-size: larger;
 }
-.con-text{
+.con-text {
     display: flex;
-    margin: 3rem 0;
+    margin: 2rem 0;
     letter-spacing: 1px;
 }
-.con-text-heading{
-    color:rgb(5, 129, 17);
+.con-text-title{
+    display: flex;
+}
+.con-text-heading {
+    color: rgb(5, 129, 17);
     font-weight: 500;
 }
 
-
-.contact-message{
-    flex: .5;
-    position: relative;
+/* ------- Form -------- */
+.contact-message {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
 }
-.con-form{
+
+.con-form {
     background-color: rgb(193, 203, 194);
-    height: 550px;
     width: 400px;
-    position: absolute;
-    left: 25%;
-    top: 3%;
+    min-height: 450px;
     border-radius: 10px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    position: relative; /* absolute remove panniruken */
 }
-.con-input{
-        margin: 3rem auto;
-        height: 4rem;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-}
-.con-input label{
-    font-size: 1.3rem;
-    color:rgb(5, 129, 17);
-    font-weight: 500;
 
+.con-input {
+    margin: 2rem auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
-.con-input input{
+.con-input label {
+    font-size: 1.1rem;
+    color: rgb(5, 129, 17);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.con-input input {
     height: 2rem;
     outline: none;
-    font-size: large;
+    font-size: 1rem;
     padding-left: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
-    background:none;
-    border-bottom: 2px solid rgb(5, 129, 17)  ;
-    color: rgb(0, 0, 0);
-}
-.con-input-message{
-     margin: 3rem auto;
-    display: flex;
-      flex-direction: column;
-      width: 80%;
-     
-    }
-textarea{
-        outline: none;
-        font-size: large;
-        padding-left: 10px;
-        color: rgb(0, 0, 0);
-        border: 1px solid rgb(5, 129, 17);
-        background:none;
-
-         width: 80%;
-    
-}
-.con-btn{
-    height: 2rem;
-    background-color: rgb(5, 129, 17);
-    width: 40%;
-    border-radius: 5px;
-    border: none;
-    font-size: large;
-    color: rgb(255, 255, 255);
-    margin:  0 auto;
-    font-weight: 600;
-    cursor: pointer;
-}
-.con-mail{
+    border-bottom: 2px solid rgb(5, 129, 17);
+    background: none;
     color: black;
 }
 
-@media screen and (max-width : 768px) {
-.con-container{
-    overflow: visible !important;
-    
-}
-
-    .contact-container{
-    display: flex; 
+/* Message box */
+.con-input-message {
+    margin: 2rem auto;
+    width: 90%;
+    display: flex;
     flex-direction: column;
 }
-.con-form{
-    background-color: rgb(193, 203, 194);
-    height:fit-content;
-    width: 300px;
-    height: 500px;
-    left: 15%;
-    top: -40px;
-    border-radius: 10px;
-    position: relative;
+textarea {
+    outline: none;
+    font-size: 1rem;
+    padding: 10px;
+    color: black;
+    border: 1px solid rgb(5, 129, 17);
+    border-radius: 8px;
+    width: 100%;
+    min-height: 100px;
+    resize: vertical; /* user resize pannalam */
 }
-.con-text{
-    display: flex;
-    margin: 1rem 0;
-    letter-spacing: 1px;
-    position: relative;
-    width: fit-content;
+
+/* Button */
+.con-btn {
+    height: 2.5rem;
+    background-color: rgb(5, 129, 17);
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    margin: 1rem auto;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.text-container{
-    font-size: small;
+.con-btn:hover {
+    background-color: rgb(3, 90, 12);
 }
+
+.con-mail {
+    color: black;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact {
+        padding-left: 0;
+    }
+    .con-form {
+        width: 90%;
+        min-height: fit-content;
+    }
+    .text-container {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .con-text {
+        margin: 1rem 0;
+        justify-content: center;
+    }
+     .con-text-icon{
+        height: 20px;
+     }
+    .con-text-title{
+        justify-content: center;
+    }
 }

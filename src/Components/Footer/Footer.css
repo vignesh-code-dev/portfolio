@@ -1,4 +1,4 @@
-.foot-container{
+/* .foot-container{
     background-color: rgb(104, 116, 111);
     height: 90px;
     width: 100vw;
@@ -84,4 +84,78 @@
     top: 10px;
     right: 5px;
 }
+}
+ */
+
+ .foot-container {
+    background-color: rgb(104, 116, 111);
+    min-height: 90px;
+    width: 100%;
+    font-size: large;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.foot-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.foot-left, .foot-right {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.foot-right-items {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid white;
+}
+
+.foot-right-items > div {
+    margin-left: 0.5rem;
+}
+
+.foot-icon-list {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 10px;
+}
+
+.foot-con-icon {
+    color: black;
+    background-color: rgb(242, 255, 0);
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.foot-con-icon:hover {
+    transform: scale(1.1);
+    background-color: orange;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    .foot-items {
+        flex-direction: column;
+        text-align: center;
+    }
+    .foot-right-items {
+        border-left: none;
+        margin: 0;
+        padding: 0;
+    }
+    .foot-right-items>div{
+        display: flex;
+    }
+    .foot-icon-list{
+        display: flex;
+        justify-content: center;
+    }
 }

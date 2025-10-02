@@ -14,9 +14,15 @@ const Contact = () => {
           <div className="contact">
             <div className="text-container">
               <div className="con-text">
-                <FaLocationDot size={30} style={{ color: "rgb(5, 129, 17)" }} />
                 <div>
-                  <span className="con-text-heading"> Address</span>
+                  <div className="con-text-title">
+                    <FaLocationDot
+                      className="con-text-icon"
+                      size={25}
+                      style={{ color: "rgb(5, 129, 17)" }}
+                    />
+                    <span className="con-text-heading">Address :</span>
+                  </div>
                   <p>
                     2/1,Melakurichi,kurichi,
                     <br />
@@ -27,19 +33,28 @@ const Contact = () => {
                 </div>
               </div>
               <div className="con-text">
-                <FaPhoneSquareAlt
-                  size={30}
-                  style={{ color: "rgb(5, 129, 17)" }}
-                />
                 <div>
-                  <span className="con-text-heading">Phone</span>
+                  <div className="con-text-title">
+                    <FaPhoneSquareAlt
+                      className="con-text-icon"
+                      size={25}
+                      style={{ color: "rgb(5, 129, 17)" }}
+                    />
+                    <span className="con-text-heading">Phone :</span>
+                  </div>
                   <p>+91 9585864091</p>
                 </div>
               </div>
               <div className="con-text">
-                <MdEmail size={30} style={{ color: "rgb(5, 129, 17)" }} />
                 <div>
-                  <span className="con-text-heading">Email</span>
+                  <div className="con-text-title">
+                    <MdEmail
+                      className="con-text-icon"
+                      size={25}
+                      style={{ color: "rgb(5, 129, 17)" }}
+                    />
+                    <span className="con-text-heading"> Email :</span>
+                  </div>
                   <p>
                     <a
                       href="mailto:vickyv.developer@gmail.com"
