@@ -7,31 +7,31 @@ import { Element } from "react-scroll";
 const data = [
   {
     id: "1",
-    img: "public/images/html.svg",
+    img: "/public/images/html.svg",
     name: "HTML 5",
     dec: "I have a good understanding of HTML and use semantic tags like  header, section, and footer to create clean layouts. I can build forms using input elements, create tables for data, and add images, videos, and links to web pages.These skills are shown in my projects like personal websites and landing pages.",
   },
   {
     id: "2",
-    img: "public/images/css.svg",
+    img: "/public/images/css.svg",
     name: "CSS 3",
     dec: "I use CSS to style web pages and make them visually appealing and responsive. I'm comfortable with selectors, colors, fonts, box model, flexbox, and grid. I also create responsive designs using media queries. My projects include clean layouts, hover effects, and mobile friendly pages using modern CSS techniques.",
   },
   {
     id: "3",
-    img: "public/images/javascript.svg",
+    img: "/public/images/javascript.svg",
     name: "JavaScript",
     dec: "I use JavaScript to add interactivity and dynamic features to web pages. I have experience with variables, functions, loops, events, and DOM manipulation.I’ve built small projects like form validation, sliders, and interactive UI elements to practice my skills.",
   },
   {
     id: "4",
-    img: "public/images/react.svg",
+    img: "/public/images/react.svg",
     name: "React JS",
     dec: "I use React to build dynamic and reusable components for web applications. I have experience with JSX, props, state, and handling events. I’ve created simple projects like to-do apps and portfolio pages using React, and I also use React Router for navigation.",
   },
   {
     id: "5",
-    img: "public/images/java.svg",
+    img: "/public/images/java.svg",
     name: "JAVA",
     dec: "Proficient in Core Java with a strong understanding of Object-Oriented Programming (OOP) concepts such as Encapsulation, Inheritance, Polymorphism and Abstraction. Knowledgeable in Collections Framework, Exception Handling, File Handling and basic Multithreading.",
   },

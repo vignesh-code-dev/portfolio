@@ -6,7 +6,7 @@ const data = [
     id: "1",
     title: "Calculator",
     dec: "This is a simple yet functional calculator built using plain JavaScript. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division.",
-    image: "/images/calc.png",
+    image: "/public/images/calc.png",
     src: "https://vignesh-code-dev.github.io/calculator/",
   },
   {
