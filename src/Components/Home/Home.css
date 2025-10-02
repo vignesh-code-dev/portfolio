@@ -48,28 +48,11 @@
     background-color: rgb(5, 129, 17);
     border: 1px solid white;
 }
-
-.home-img{
-    object-fit: cover;
-    height: 450px;
-    position: relative;
-    left: 60%;
-    top: 200px;
-    opacity: 50%;
-}
-
 @media screen and (max-width:768px){
     .intro-content{
     left: 0;
     width: 100%;
     padding:  4rem;
-}
-    .home-img{
-    position: relative;
-    left: 20%;
-    top: 40vh;
-    opacity: 20%;
-    height: 300px;
 }
     .intro-para{
     font-size: large;

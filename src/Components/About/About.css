@@ -68,13 +68,11 @@
 }
 .skill-para{
     text-align:center;
-    margin: 1rem auto;
     font-size: large;
     font-weight: 400;
     letter-spacing: 1px;
-    padding-left: 20%;
+    margin: 0 auto;
     position: relative;
-    left: -9rem;
 }
 .para-name{
     color: rgb(5, 129, 17);
@@ -101,20 +99,32 @@
 }
 
 @media screen and (max-width:768px) {
-    .skill-para{
-     text-align:left;
-    margin: 1rem auto;
-    font-size: large;
-    font-weight: 450;
-    letter-spacing: 1px;
-    position: relative;
-    left: 0 ;
-}
+    .slick-arrow::before{
+        font-size: 30px;
+    }
+.skill-para {
+        padding: 0 1rem;
+        left: 0;
+        font-size: 0.95rem;
+    }
+    .skill-image {
+        height: 80px;
+        width: 80px;
+    }
 .container{
-    max-width: 100% !important;
+    max-width: 95% !important;
      padding: 0 1rem;
 }
-  .slick-slide > div {
-    margin: 0 5px; /* card கள் இடைவெளி குறைச்சுக்கலாம் */
-  }
+.slick-prev {
+        left: -40px;
+    }
+
+    .slick-next {
+        right: -30px;
+    }
+    .slick-slide >div{
+    margin: 0 5px;
+}
+ .pro-text-name { font-size: 1rem; }
+  .pro-text-dec { font-size: 0.85rem; }
 }

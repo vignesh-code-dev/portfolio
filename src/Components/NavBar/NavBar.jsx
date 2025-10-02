@@ -9,6 +9,9 @@ const NavBar = () => {
   function handleClick() {
     setClicked(!clicked);
   }
+  function handleMenuClick() {
+    setClicked(false);
+  }
 
   return (
     <nav className="navbar">
@@ -22,17 +25,41 @@ const NavBar = () => {
           <IoCloseOutline size={40} role="button" />
         )}
       </div>
-      <div className={!clicked?"menu":"menu-active"}>
-        <Link to="home" className="menulist" smooth={true} duration={500}>
+      <div className={!clicked ? "menu" : "menu-active"}>
+        <Link
+          to="home"
+          className="menulist"
+          smooth={true}
+          duration={500}
+          onClick={handleMenuClick}
+        >
           Home
         </Link>
-        <Link to="about" className="menulist" smooth={true} duration={500}>
+        <Link
+          to="about"
+          className="menulist"
+          smooth={true}
+          duration={500}
+          onClick={handleMenuClick}
+        >
           About
         </Link>
-        <Link to="projects" className="menulist" smooth={true} duration={500}>
+        <Link
+          to="projects"
+          className="menulist"
+          smooth={true}
+          duration={500}
+          onClick={handleMenuClick}
+        >
           Projects
         </Link>
-        <Link to="contact" className="menulist" smooth={true} duration={500}>
+        <Link
+          to="contact"
+          className="menulist"
+          smooth={true}
+          duration={500}
+          onClick={handleMenuClick}
+        >
           Contact
         </Link>
       </div>

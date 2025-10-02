@@ -39,18 +39,27 @@ const data = [
 
 const About = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 2, // desktop
+    slidesToShow: 3, // desktop
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 768, // <=768px
-        slidesToShow: 1,
-        dots:false,
-        arrow:true,
-      }
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,  // mobile
+        settings: {
+          dots: true,
+          slidesToShow: 1,  // 1 card
+          slidesToScroll: 1,
+          arrows: false,     // optional: hide arrows on mobile
+        },
+      },
     ],
   };
   return (

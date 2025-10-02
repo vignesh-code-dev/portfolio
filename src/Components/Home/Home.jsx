@@ -1,7 +1,5 @@
-// import introImage from "../../assets/intro-image-png.webp";
 import "../Home/Home.css";
 import { Link, Element } from "react-scroll";
-import img from "../../../public/images/home.webp";
 const Intro = () => {
   return (
     <Element name="home" className="intro">
@@ -21,9 +19,6 @@ const Intro = () => {
           <a href="public/epfo.pdf" className="intro-btn" download>
             Download CV
           </a>
-        </div>
-        <div className="home-image">
-          <img src={img} alt="" className="home-img" />
         </div>
       </section>
     </Element>

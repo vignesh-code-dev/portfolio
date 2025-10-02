@@ -9,7 +9,7 @@
     column-gap: 100px;
 }
 .pro-items{
-    height: 300px;
+    min-height: 350px;
     width: 500px;
     border: 2px solid rgb(5, 129, 17);
     margin-top: 70px;
@@ -63,9 +63,9 @@
       font-weight: bold;
 }
 .pro-head{
+    display: flex;
     justify-content: center;
     margin-top: 5rem;
-    display: flex;
 }
 .pro-head>h1{
      width: fit-content;
@@ -80,6 +80,7 @@
         position:static; 
         justify-content: center;
         align-items: center;
+        height: max-content;
     }
     .pro-items{
         width: 300px;
@@ -93,7 +94,7 @@
       height: 25px;
       width: 90px;
       font-size: small;
-      bottom: 5px;
+      bottom: 7px;
       left: 50px;
 }
 .pro-img{
