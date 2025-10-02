@@ -48,3 +48,17 @@
 .foot-mail{
     color:black;
 }
+
+@media screen and (max-width : 768px) {
+    .foot-container{
+        height: max-content;
+    }
+    .foot-items{
+    display: flex; 
+    flex-direction: column;
+    text-decoration: none;
+}
+.foot-right{
+    padding: 20px 50px;
+}
+}

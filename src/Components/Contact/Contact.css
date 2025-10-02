@@ -1,7 +1,7 @@
 .con-container{
     width: 100vw;   
     overflow:hidden;
-    height: 100vh   ;
+    height:100vh   ;
 }
 .con-head{
     margin-top: 5rem;
@@ -43,12 +43,13 @@
     position: relative;
 }
 .con-form{
-    height:600px;
+    background-color: rgb(193, 203, 194);
+    height:550px;
     width: 400px;
     position: absolute;
     left: 25%;
-    top: 5%;
-    border-radius: 20px;
+    top: 3%;
+    border-radius: 10px;
 }
 .con-input{
         margin: 3rem auto;
@@ -79,7 +80,7 @@
     display: flex;
       flex-direction: column;
       width: 80%;
-       
+     
     }
 textarea{
         outline: none;
@@ -87,9 +88,9 @@ textarea{
         padding-left: 10px;
         color: rgb(0, 0, 0);
         border: 1px solid rgb(5, 129, 17);
- background:none;
+        background:none;
 
- width: 80%;
+         width: 80%;
     
 }
 .con-btn{
@@ -105,4 +106,25 @@ textarea{
 }
 .con-mail{
     color: black;
+}
+
+@media screen and (max-width : 768px) {
+    .contact-container{
+    display: flex; 
+    flex-direction: column;
+}
+.con-form{
+    background-color: rgb(193, 203, 194);
+    height:400px;
+    width: 300px;
+    position: absolute;
+    left: 15%;
+    border-radius: 10px;
+    top: -10px;
+}
+.con-text{
+    display: flex;
+    margin: 1.5rem 0;
+    letter-spacing: 1px;
+}
 }
