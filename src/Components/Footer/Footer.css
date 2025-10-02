@@ -53,6 +53,7 @@
     .foot-container{
         height:auto;
         font-size: small;
+        width: 120vw;
     }
     .foot-items{
     display: flex; 

@@ -1,7 +1,7 @@
 .con-container{
     width: 100vw;   
     overflow:hidden;
-    height:100vh   ;
+    height: 100vh;
 }
 .con-head{
     margin-top: 5rem;
@@ -18,7 +18,7 @@
 }
 .contact{
     flex: .5;
-    position: relative      ;
+    position: relative;
     left: 15%;
 }
 .text-container{
@@ -109,6 +109,11 @@ textarea{
 }
 
 @media screen and (max-width : 768px) {
+.con-container{
+    overflow: visible !important;
+    
+}
+
     .contact-container{
     display: flex; 
     flex-direction: column;
@@ -117,11 +122,11 @@ textarea{
     background-color: rgb(193, 203, 194);
     height:fit-content;
     width: 300px;
-    position: absolute;
+    height: 500px;
     left: 15%;
+    top: -40px;
     border-radius: 10px;
-    top: 10px;
-    
+    position: relative;
 }
 .con-text{
     display: flex;

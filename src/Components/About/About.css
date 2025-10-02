@@ -117,7 +117,4 @@
   .slick-slide > div {
     margin: 0 5px; /* card கள் இடைவெளி குறைச்சுக்கலாம் */
   }
-   .item {
-    height: auto; /* fix for responsive shrink */
-  }
 }
