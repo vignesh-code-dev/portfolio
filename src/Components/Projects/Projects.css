@@ -82,8 +82,7 @@
         align-items: center;
     }
     .pro-items{
-        width: 500px;
-        width: 400px;
+        width: 300px;
         position: relative;
         left: -20%;
     }
@@ -93,16 +92,13 @@
 .pro-btn{
       height: 25px;
       width: 90px;
-      outline: none;
-      border: none;
-      border-radius: 5px;
       font-size: small;
-      background-color: rgb(74, 74, 255);
-      color: white;
-      cursor: pointer;
-      position: absolute;
       bottom: 5px;
       left: 50px;
-      font-weight: bold;
+}
+.pro-img{
+    object-fit: contain;
+    width: 100px;
+    height: 200px;
 }
 }
