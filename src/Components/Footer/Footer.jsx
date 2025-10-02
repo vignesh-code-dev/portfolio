@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <div className="foot-right">
           <div>
-            <span className=" ">Connect with me</span>
+            <span className="foot-right-title">Connect with me</span>
           </div>
           <div className="foot-right-items">
             <div>

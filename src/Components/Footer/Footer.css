@@ -51,14 +51,36 @@
 
 @media screen and (max-width : 768px) {
     .foot-container{
-        height: max-content;
+        height:auto;
+        font-size: small;
     }
     .foot-items{
     display: flex; 
     flex-direction: column;
-    text-decoration: none;
+}
+.foot-right-items{
+    font-size: small;
+    left: 0;
+    margin-top: 20px;
+}
+.foot-con-icon{
+    margin: 0 .5;
+    background-color: rgb(242, 255, 0);
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+.foot-icon-list{
+    margin-top:0;
 }
 .foot-right{
-    padding: 20px 50px;
+    top: 0;
+}
+.foot-right-title{
+    position: relative;
+    top: 10px;
+    right: 5px;
 }
 }
