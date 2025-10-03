@@ -1,0 +1,61 @@
+.main{
+  width: 100vw;
+  overflow: hidden;
+}
+.title{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.title>h1{
+    width: fit-content;
+    border-bottom: 3px solid rgb(5, 129, 17);
+}
+.skill-para{
+    text-align:center;
+    font-size: large;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 1rem auto;
+    /* position: relative; */
+}
+.skill-header{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+.skill-header>h1{
+     width: fit-content;
+    border-bottom: 3px solid rgb(5, 129, 17);
+}
+.container{
+    width: 100%;
+}
+.box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap: 50px;
+}
+.item{
+    margin: 20px;
+    background: #d8e2dc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.item:hover{
+    transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+
+
+.skill-image{
+    object-fit: cover;
+    height: 100px;
+}

@@ -1,8 +1,5 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "../About/About.css";
-import { Element } from "react-scroll";
+import React from "react";
+import "../Skill/Skill.css";
 const data = [
   {
     id: "1",
@@ -36,64 +33,40 @@ const data = [
   },
 ];
 
-const About = () => {
-    const settings = {
-  dots: true,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 4, // desktop
-  slidesToScroll: 1,
-  arrows: true,
-  responsive: [
-    {
-      breakpoint: 1024, // tablet
-      settings: { slidesToShow: 2 }
-    },
-    {
-      breakpoint: 768, // mobile
-      settings: { slidesToShow: 1 } // only 1 card
-    }
-  ]
-};
-
+const Skill = () => {
   return (
-    <Element name="about">
-      <section className="main">
-        <div className="title">
-          <h1>About Me</h1>
-        </div>
-        <p className="skill-para">
-          Hi, I'm <span className="para-name">Vignesh</span>, a passionate
-          Frontend Developer. I specialize in crafting responsive,
-          <br /> user-friendly websites and applications using HTML, CSS,
-          JavaScript, and modern frameworks like React js.
-        </p>
-        <div className="skill-header">
-          <h1>Technical Skills</h1>
-        </div>
-
-        <div className="container">
-          <div className="box">
-            <Slider {...settings}>
-              {data.map((d) => (
-                <div className="item" key={d.id}>
-                  <div className="image">
-                    <div>
-                      <img src={d.img} alt="" className="skill-image" />
-                    </div>
-                  </div>
-                  <div className="pro-text">
-                    <h1 className="pro-text-name">{d.name}</h1>
-                    <p className="pro-text-dec">{d.dec}</p>
-                  </div>
+    <section className="main">
+      <div className="title">
+        <h1>About Me</h1>
+      </div>
+      <p className="skill-para">
+        Hi, I'm <span className="para-name">Vignesh</span>, a passionate
+        Frontend Developer. I specialize in crafting responsive,
+        <br /> user-friendly websites and applications using HTML, CSS,
+        JavaScript, and modern frameworks like React js.
+      </p>
+      <div className="skill-header">
+        <h1>Technical Skills</h1>
+      </div>
+      <div className="container">
+        <div className="box">
+          {data.map((d) => (
+            <div className="item" key={d.id}>
+              <div className="image">
+                <div>
+                  <img src={d.img} alt="" className="skill-image" />
                 </div>
-              ))}
-            </Slider>
-          </div>
+              </div>
+              <div className="pro-text">
+                <h1 className="pro-text-name">{d.name}</h1>
+                <p className="pro-text-dec">{d.dec}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      </section>
-    </Element>
+      </div>
+    </section>
   );
 };
 
-export default About;
+export default Skill;

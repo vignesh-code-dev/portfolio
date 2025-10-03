@@ -4,13 +4,15 @@ import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Skill from "./Components/Skill/Skill";
 import "./App.css";
 const App = () => {
   return (
     <div>
       <NavBar />
       <Home />
-      <About />
+      {/* <About /> */}
+      <Skill/>
       <Projects />
       <Contact />
       <Footer/>

@@ -7,16 +7,23 @@
     grid-area: auto;
     grid-template-columns: 500px 500px;
     column-gap: 100px;
+    cursor: pointer;
+    
 }
 .pro-items{
     min-height: 350px;
     width: 500px;
-    border: 2px solid rgb(5, 129, 17);
+    border: 2px solid rgb(5, 129, 17);   
     margin-top:70px;   
     margin-left: 30%; 
     display: flex;
     border-radius: 15px;
     position: relative;
+    transition: .3s;
+}
+.pro-items:hover{
+    transform: translateY(-5px);
+     box-shadow: inset 2px 2px 15px rgb(5, 129, 17) ;
 }
 .item-text{
     display: flex;   
