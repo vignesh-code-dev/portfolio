@@ -1,8 +1,5 @@
 import "../Footer/Footer.css";
-// import { FaLinkedin } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa6";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub,FaLinkedin } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="foot-container">
@@ -20,10 +17,6 @@ const Footer = () => {
               </a>
               <a href="">
                 <FaLinkedin size={30} className="foot-con-icon" />
-              </a>
-              <a href="">
-                {" "}
-                <FaFacebookSquare size={30} className="foot-con-icon" />
               </a>
             </div>
           </div>

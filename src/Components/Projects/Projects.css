@@ -12,8 +12,8 @@
     min-height: 350px;
     width: 500px;
     border: 2px solid rgb(5, 129, 17);
-    margin-top: 70px;
-    margin-left: 40%;    
+    margin-top:70px;   
+    margin-left: 30%; 
     display: flex;
     border-radius: 15px;
     position: relative;
