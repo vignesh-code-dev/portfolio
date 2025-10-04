@@ -16,7 +16,7 @@ const Intro = () => {
             <br /> Currently looking for opportunities to contribute <br />
             and grow in a professional environment.
           </p>
-          <a href="public/VIGNESH Resume.pdf" className="intro-btn" download="VIGNESH Resume.pdf">
+          <a href="public/VIGNESH Resume.pdf" className="intro-btn" download="VIGNESH Resume.pdf" rel="noopener">
             Download CV
           </a>
         </div>
