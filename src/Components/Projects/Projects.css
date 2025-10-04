@@ -65,7 +65,7 @@
       color: white;
       cursor: pointer;
       position: absolute;
-      bottom: 10px;
+      bottom: 30px;
       left: 50px;
       font-weight: bold;
 }
@@ -98,10 +98,10 @@
     font-size: 12px;
 }
 .pro-btn{
-      height: 25px;
+      height: 30px;
       width: 90px;
       font-size: small;
-      bottom: 7px;
+      bottom: 15px;
       left: 50px;
 }
 .pro-img{
