@@ -13,10 +13,10 @@ const Footer = () => {
               <span>Follow me </span>
               <a href="https://github.com/vignesh-code-dev">
                 {" "}
-                <FaGithub size={30} className="foot-con-icon" />
+                <FaGithub size={30} className="foot-con-icon" target="_blank" />
               </a>
               <a href="">
-                <FaLinkedin size={30} className="foot-con-icon" />
+                <FaLinkedin size={30} className="foot-con-icon" target="_blank"  />
               </a>
             </div>
           </div>
