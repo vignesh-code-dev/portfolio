@@ -16,7 +16,7 @@ const Intro = () => {
             <br /> Currently looking for opportunities to contribute <br />
             and grow in a professional environment.
           </p>
-          <a href="./VIGNESH_Resume.pdf" className="intro-btn" download="VIGNESH_Resume.pdf" rel="noopener">
+          <a   href={`${import.meta.env.BASE_URL}VIGNESH_Resume.pdf`} className="intro-btn" download="VIGNESH_Resume.pdf" rel="noopener">
             Download CV
           </a>
         </div>
