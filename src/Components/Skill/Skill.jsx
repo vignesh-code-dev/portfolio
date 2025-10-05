@@ -1,4 +1,5 @@
 import React from "react";
+import { Element } from "react-scroll";
 import "../Skill/Skill.css";
 const data = [
   {
@@ -35,37 +36,39 @@ const data = [
 
 const Skill = () => {
   return (
-    <section className="main">
-      <div className="title">
-        <h1>About Me</h1>
-      </div>
-      <p className="skill-para">
-        Hi, I'm <span className="para-name">Vignesh</span>, a passionate
-        Frontend Developer. I specialize in crafting responsive,
-        <br /> user-friendly websites and applications using HTML, CSS,
-        JavaScript, and modern frameworks like React js.
-      </p>
-      <div className="skill-header">
-        <h1>Technical Skills</h1>
-      </div>
-      <div className="container">
-        <div className="box">
-          {data.map((d) => (
-            <div className="item" key={d.id}>
-              <div className="image">
-                <div>
-                  <img src={d.img} alt="" className="skill-image" />
+    <Element name="skill">
+      <section className="main">
+        <div className="title">
+          <h1>About Me</h1>
+        </div>
+        <p className="skill-para">
+          Hi, I'm <span className="para-name">Vignesh</span>, a passionate
+          Frontend Developer. I specialize in crafting responsive,
+          <br /> user-friendly websites and applications using HTML, CSS,
+          JavaScript, and modern frameworks like React js.
+        </p>
+        <div className="skill-header">
+          <h1>Technical Skills</h1>
+        </div>
+        <div className="container">
+          <div className="box">
+            {data.map((d) => (
+              <div className="item" key={d.id}>
+                <div className="image">
+                  <div>
+                    <img src={d.img} alt="" className="skill-image" />
+                  </div>
+                </div>
+                <div className="pro-text">
+                  <h1 className="pro-text-name">{d.name}</h1>
+                  <p className="pro-text-dec">{d.dec}</p>
                 </div>
               </div>
-              <div className="pro-text">
-                <h1 className="pro-text-name">{d.name}</h1>
-                <p className="pro-text-dec">{d.dec}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Element>
   );
 };
 

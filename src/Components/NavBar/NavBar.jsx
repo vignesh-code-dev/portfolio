@@ -36,7 +36,7 @@ const NavBar = () => {
           Home
         </Link>
         <Link
-          to="about"
+          to="skill"
           className="menulist"
           smooth={true}
           duration={500}
