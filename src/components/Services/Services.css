@@ -1,0 +1,38 @@
+.services-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.services-swiper .swiper-slide {
+  display: flex;
+  height: auto;
+}
+
+.services-swiper .swiper-slide > div {
+  width: 100%;
+}
+
+.services-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.services-swiper {
+  padding-bottom: 70px !important;
+}
+
+.services-swiper .swiper-pagination {
+  bottom: 15px !important; /* தேவைக்கு 0px, -5px, -10px என்று adjust பண்ணலாம் */
+}
+
+.services-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #64748b;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.services-swiper .swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 999px;
+  background: #06b6d4;
+}
