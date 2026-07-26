@@ -4,21 +4,21 @@ import { ExternalLink, GitBranch } from "lucide-react";
 const projects = [
   {
     title: "Employee Management System",
-    image: "/projects/employee.png",
+    image: "{`${import.meta.env.BASE_URL}projects/employee.png`}",
     description:
       "A complete employee management solution with authentication, attendance, payroll and reports.",
     technologies: ["React", "Node.js", "Express", "MySQL"],
   },
   {
     title: "Portfolio Website",
-    image: "/projects/portfolio.png",
+    image: "{`${import.meta.env.BASE_URL}projects/portfolio.png`}",
     description:
       "Premium personal portfolio showcasing projects, skills and experience with modern animations.",
     technologies: ["React", "Framer Motion"],
   },
   {
     title: "Bus Booking System",
-    image: "/projects/bus.png",
+    image: "{`${import.meta.env.BASE_URL}projects/bus.png`}",
     description:
       "Online ticket booking platform with route management, seat selection and user dashboard.",
     technologies: ["React", "Express", "MySQL"],

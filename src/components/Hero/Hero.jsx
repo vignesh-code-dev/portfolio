@@ -83,8 +83,8 @@ const Hero = () => {
 
               {/* Profile Image */}
               <img
-                src="/profile.jpg"
-                alt="Vignesh"
+                src={`${import.meta.env.BASE_URL}/profile.png`}
+                alt="Profile Image"
                 className="relative h-80 w-80 rounded-full border-4 border-blue-500 object-cover shadow-2xl md:h-[420px] md:w-[420px]"
               />
             </div>
