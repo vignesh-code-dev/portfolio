@@ -57,8 +57,8 @@ const Footer = () => {
 
             <div className="mt-6 space-y-3 text-slate-400">
               <p>📍 Tiruchirappalli, Tamil Nadu</p>
-              <p>📞 +91 9080130918</p>
-              <p>📧 varahi.infotechnology@gmail.com</p>
+              <p>📞 +91 9585864091</p>
+              <p>📧 vickyv.developer@gmail.com</p>
             </div>
 
             {/* Social */}
@@ -85,7 +85,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://wa.me/919080130918"
+                href="https://wa.me/919585864091"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-green-600 p-3"
